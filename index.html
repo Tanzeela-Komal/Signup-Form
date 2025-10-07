@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> </head>
+<body>
+    <div class="background-animation"></div>
+
+    <div class="main-wrapper">
+        <div class="form-card-left">
+            <div class="company-logo">
+                <span class="material-icons logo-icon">group_add</span>
+                <h1>Sign Up Today</h1>
+                <p>Join our community and discover amazing features!</p>
+            </div>
+            <div class="quote-section">
+                "The best way to predict the future is to create it."
+            </div>
+        </div>
+
+        <div class="form-card-right">
+            <h2>Create Your Account</h2>
+            <form id="registrationForm">
+                <div class="form-section personal-info-section">
+                    <h3>Personal Details</h3>
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Your first name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Your last name" required>
+                        </div>
+                        <div class="input-group full-width">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="input-group full-width">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" placeholder="+1 (234) 567-8900">
+                        </div>
+                        <div class="input-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob">
+                        </div>
+                        <div class="input-group">
+                            <label for="country">Country</label>
+                            <select id="country" required>
+                                <option value="">Select country</option>
+                                <option value="usa">United States</option>
+                                <option value="canada">Canada</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="australia">Australia</option>
+                                <option value="germany">Germany</option>
+                                <option value="france">France</option>
+                            </select>
+                        </div>
+                        <div class="input-group full-width gender-group">
+                            <label>Gender</label>
+                            <div class="gender-options">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section account-details-section">
+                    <h3>Account Security</h3>
+                    <div class="input-grid">
+                        <div class="input-group full-width">
+                            <label for="password">Create Password</label>
+                            <input type="password" id="password" placeholder="Min. 8 characters" required>
+                        </div>
+                        <div class="input-group full-width">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" placeholder="Repeat your password" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="signup-button">
+                    <span class="material-icons">person_add</span>
+                    Create Account
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
